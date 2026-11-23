@@ -1,8 +1,9 @@
 #include "uincampus/version.hpp"
-#include <print>
+#include <iostream>
 
 int main()
 {
-    std::println("UIN-Campus — Système de gestion académique");
-    std::println("Version {}", uin::version());
+    std::cout << "UIN-Campus — Système de gestion académique\n";
+    std::cout << "Version " << uin::version() << '\n';
+    return 0;
 }
