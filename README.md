@@ -1,6 +1,6 @@
 # UIN-Campus
 
-Système de gestion académique de l'UIN (projet du cours de POO en C++).
+Système de gestion académique de l'UIN (projet du cours de POO en C++ moderne).
 
 ## Versions des outils utilisés
 
@@ -17,7 +17,20 @@ Système de gestion académique de l'UIN (projet du cours de POO en C++).
     cmake --build --preset debug
     ./build/debug/uin-campus
 
-## Résultat attendu
+## Options de la ligne de commande
 
-    UIN-Campus — Système de gestion académique
-    Version 0.1.0
+    ./build/debug/uin-campus --version
+    ./build/debug/uin-campus --aide
+
+## Organisation du code
+
+- version.hpp, version.cpp : version du projet
+- regles.hpp, regles.cpp : barème, seuils et mentions (chapitres 3 et 5)
+- saisie.hpp, saisie.cpp : saisie robuste (chapitres 3 et 4)
+- calculs.hpp, calculs.cpp : moyennes simple et pondérée, statistiques (chapitres 4 et 5)
+- app/main.cpp : programme principal
+
+## Exemple
+
+Notes 12 (coefficient 2) et 15 (coefficient 1) : moyenne pondérée 13.00,
+moyenne simple 13.50, mention Assez bien.
